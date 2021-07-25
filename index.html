@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        
+        <div class="header__logo">
+            <img class="header__logo-logo" src="./images/logo.png" alt="">
+            <span class="header__logo-logospan">Weather API</span>
+        </div>
+        
+        <form class="header__temp">
+            <select name="Temp" class="header__temp-tempSelect" id="tempSelect">
+                <option value="cilcius">°C</option>
+                <option value="fahrenheit">°F</option>
+            </select>
+        </form>
+    </div>
+    
+    <div class="card">
+        <div class="card__mainInfoCard">
+            <div class="card__mainInfoCard-cityDiv" id="cityDiv"></div>
+            <div class="card__mainInfoCard-mainInformation" id="mainInformation"></div>
+            <div class="card__mainInfoCard-feelslike"></div>
+            <div class="card__mainInfoCard-humidity" id="humidity"></div>
+        </div>
+        
+        <div class="card__weatherInfo">
+            <div class="card__weatherInfo-showImage"></div>
+            <div class="card__weatherInfo-imgDescription" id="imgDescription"></div>
+            <div class="card__weatherInfo-sunriseInfo"></div>
+            <div class="card__weatherInfo-sunsetInfo"></div>
+        </div>
+
+    </div>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
